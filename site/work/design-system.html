@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MIREX Web Design System — vladimir vizhunov</title>
+<meta name="description" content="A token-driven design system for a B2B website: one set of components, light and dark themes.">
+<meta property="og:title" content="MIREX Web Design System — vladimir vizhunov">
+<meta property="og:description" content="A token-driven design system for a B2B website: one set of components, light and dark themes.">
+<meta property="og:image" content="https://rockstaneverdie.github.io/portfolio/img/og-bw.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/KibernetykMono-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/KibernetykMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top wrap">
+  <a class="brand" href="../index.html">vladimir vizhunov<span class="handle">@stillrocksta</span></a>
+  <nav><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav>
+</header>
+<main class="case">
+<section class="case-head wrap">
+  <a class="back" href="../index.html#work">← All work</a>
+  <h1>MIREX Web Design System</h1>
+  <p class="lead">A token-driven design system for a B2B website: one set of components, light and dark themes.</p>
+  <dl class="meta"><div><dt>Role</dt><dd>Sole designer</dd></div><div><dt>Client</dt><dd>MIREX</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Tools</dt><dd>Figma, CSS</dd></div></dl>
+</section>
+<div class="case-body wrap"><section class="prose"><h2>Context</h2><p>MIREX builds exhibition stands. Its print and social work already had a recognisable look, but the website had nothing to stand on: no tokens, no components, no rules. The team liked a series of greeting cards I had made, so the brief was simple: the same visual language, without the holiday theme, as a system the website can be built from.</p></section><div class="media"><figure class=""><img src="../img/design-system/cover.webp" width="1440" height="810" alt="File cover. Pages: Foundations, Tone of voice, Brand, Icons, Controls, Content, Layout, Pages." loading="lazy" decoding="async" class="" data-zoom><figcaption>File cover. Pages: Foundations, Tone of voice, Brand, Icons, Controls, Content, Layout, Pages.</figcaption></figure></div><section class="prose"><h2>Foundations</h2><p>82 variables in four collections. Primitive palettes (green 50–950, neutrals, red, amber) are never used directly — components only reference 25 semantic colour tokens such as bg/surface, text/brand or action/primary-hover.</p><p>Each semantic token has a Light and a Dark mode. Switching the mode on a parent frame re-themes a whole page, so there is not a single duplicated component for dark mode. Spacing runs on a 4 px scale (4–128), radii from 0 to pill, and 13 text styles pair Affect for headlines with Montserrat for everything else.</p></section><div class="media"><figure class=""><img src="../img/design-system/palette.webp" width="1456" height="776" alt="Primitive palettes. Components never reference these directly." loading="lazy" decoding="async" class="" data-zoom><figcaption>Primitive palettes. Components never reference these directly.</figcaption></figure></div><div class="media grid cols-2"><figure class=""><img src="../img/design-system/tokens.webp" width="1456" height="1297" alt="Semantic tokens with their CSS names." loading="lazy" decoding="async" class="" data-zoom><figcaption>Semantic tokens with their CSS names.</figcaption></figure><figure class=""><img src="../img/design-system/type.webp" width="1571" height="1377" alt="Type scale: Affect for headlines, Montserrat for text and UI." loading="lazy" decoding="async" class="" data-zoom><figcaption>Type scale: Affect for headlines, Montserrat for text and UI.</figcaption></figure></div><section class="prose"><h2>Components</h2><p>Buttons come in five variants — Primary, Secondary, Ghost, Link and Glass — three sizes and six states, including focus and loading: 90 variants with label and icon exposed as properties. Icon buttons, inputs, tags, cards, header, hero, CTA banner and footer are built the same way, and the example pages are assembled only from these parts.</p></section><div class="media"><figure class=""><img src="../img/design-system/buttons.webp" width="2400" height="1123" alt="The full button matrix in both themes — same components, different variable mode." loading="lazy" decoding="async" class="" data-zoom><figcaption>The full button matrix in both themes — same components, different variable mode.</figcaption></figure></div><section class="prose"><h2>Brand pattern</h2><p>The brand&#x27;s arc pattern used to end in a dense block with a hard diagonal cut. I regenerated the geometry with code from a single Bézier spine and wrote usage rules: the arc always runs off the edge of a block, its ends are never visible, and a page uses it at most twice.</p></section><div class="media"><figure class=""><img src="../img/design-system/arc-usage.webp" width="1760" height="620" alt="Arc usage: in a corner, behind a dark block, next to a key number." loading="lazy" decoding="async" class="" data-zoom><figcaption>Arc usage: in a corner, behind a dark block, next to a key number.</figcaption></figure></div><section class="prose"><h2>Handoff</h2><p>Every variable carries a CSS code-syntax name, and the tokens are exported as a tokens.css file with the same names — light theme in :root, dark under [data-theme=&quot;dark&quot;]. Developers read var(--color-action-primary) in Figma and type the same thing in code.</p></section></div>
+<a class="next wrap" href="website.html"><span>Next case</span><strong>mir-ex.ru homepage redesign →</strong></a>
+</main>
+<footer id="contact" class="foot wrap">
+  <p class="foot-lead">Have a project or a role in mind?</p>
+  <a class="foot-mail" href="https://t.me/stillrocksta">Let's talk →</a>
+  <div class="foot-links"><a href="https://t.me/stillrocksta">Telegram @stillrocksta</a><a href="https://instagram.com/stillrocksta">Instagram @stillrocksta</a><a href="https://github.com/rockstaneverdie">GitHub</a><a href="https://www.linkedin.com/in/vladimir-vizhunov-5964213b5/">LinkedIn</a></div>
+  <p class="foot-small">© 2026 vladimir vizhunov · Set in <a href="https://pavlokilko.github.io/KibernetykMono/">Kibernetyk Mono</a></p>
+</footer>
+<div class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="../main.js" defer></script>
+</body>
+</html>

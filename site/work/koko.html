@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KoKo — sign language app — vladimir vizhunov</title>
+<meta name="description" content="My iOS app for learning Russian Sign Language: a mascot, an illustrated alphabet and on-device gesture recognition.">
+<meta property="og:title" content="KoKo — sign language app — vladimir vizhunov">
+<meta property="og:description" content="My iOS app for learning Russian Sign Language: a mascot, an illustrated alphabet and on-device gesture recognition.">
+<meta property="og:image" content="https://rockstaneverdie.github.io/portfolio/img/og-bw.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<link rel="preload" href="../fonts/KibernetykMono-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../fonts/KibernetykMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="top wrap">
+  <a class="brand" href="../index.html">vladimir vizhunov<span class="handle">@stillrocksta</span></a>
+  <nav><a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a></nav>
+</header>
+<main class="case">
+<section class="case-head wrap">
+  <a class="back" href="../index.html#work">← All work</a>
+  <h1>KoKo — sign language app</h1>
+  <p class="lead">My iOS app for learning Russian Sign Language: a mascot, an illustrated alphabet and on-device gesture recognition.</p>
+  <dl class="meta"><div><dt>Role</dt><dd>Designer &amp; developer</dd></div><div><dt>Client</dt><dd>Own product</dd></div><div><dt>Year</dt><dd>2026</dd></div><div><dt>Stack</dt><dd>Swift, SwiftUI, Vision, Create ML</dd></div></dl>
+</section>
+<div class="case-body wrap"><section class="prose"><h2>Idea</h2><p>KoKo is my Duolingo-style iOS app for Russian Sign Language. Instead of watching videos, you sign in front of the camera and the app checks the hand shape on device, with Vision and a Create ML model. Lessons are led by Koko, a monkey in a blue hoodie.</p><p>That meant every letter of the fingerspelling alphabet had to be drawn with the mascot — and the hand shapes had to be correct, not just cute.</p></section><div class="media"><figure class=""><img src="../img/koko/concept.webp" width="1536" height="1024" alt="Character sheet: turnaround, palette, details and emotions." loading="lazy" decoding="async" class="" data-zoom><figcaption>Character sheet: turnaround, palette, details and emotions.</figcaption></figure></div><div class="media grid cols-6"><figure class=""><img src="../img/koko/letter-a.webp" width="1024" height="1024" alt="" loading="lazy" decoding="async" class="" data-zoom></figure><figure class=""><img src="../img/koko/letter-v.webp" width="1024" height="1024" alt="" loading="lazy" decoding="async" class="" data-zoom></figure><figure class=""><img src="../img/koko/letter-l.webp" width="1024" height="1024" alt="" loading="lazy" decoding="async" class="" data-zoom></figure><figure class=""><img src="../img/koko/letter-o.webp" width="1024" height="1024" alt="" loading="lazy" decoding="async" class="" data-zoom></figure><figure class=""><img src="../img/koko/letter-p.webp" width="1024" height="1024" alt="" loading="lazy" decoding="async" class="" data-zoom></figure><figure class=""><img src="../img/koko/letter-u.webp" width="1024" height="1024" alt="" loading="lazy" decoding="async" class="" data-zoom></figure></div><section class="prose"><h2>Process</h2><p>33 letters; the nine that involve movement get start, end and path frames, 51 images in total, plus a second set of 42 hand-only images. Images were generated with a strict reference sheet to keep the character consistent, then cleaned by a Python pipeline: background removal, artifact clean-up, resizing. Letters where the model kept getting the gesture wrong were flagged for manual review instead of being shipped.</p></section><div class="media"><figure class=""><img src="../img/koko/letters-grid.webp" width="2700" height="1800" alt="The full letter set, А to Я, with start and end frames for moving letters." loading="lazy" decoding="async" class="" data-zoom><figcaption>The full letter set, А to Я, with start and end frames for moving letters.</figcaption></figure></div><div class="media"><figure class=""><img src="../img/koko/hands-grid.webp" width="2160" height="1200" alt="Hand-only set for exercises." loading="lazy" decoding="async" class="" data-zoom><figcaption>Hand-only set for exercises.</figcaption></figure></div><section class="prose"><h2>Code</h2><p>The app is written in Swift and SwiftUI. Source: github.com/rockstaneverdie/koko-sign-app.</p></section></div>
+<a class="next wrap" href="design-system.html"><span>Next case</span><strong>MIREX Web Design System →</strong></a>
+</main>
+<footer id="contact" class="foot wrap">
+  <p class="foot-lead">Have a project or a role in mind?</p>
+  <a class="foot-mail" href="https://t.me/stillrocksta">Let's talk →</a>
+  <div class="foot-links"><a href="https://t.me/stillrocksta">Telegram @stillrocksta</a><a href="https://instagram.com/stillrocksta">Instagram @stillrocksta</a><a href="https://github.com/rockstaneverdie">GitHub</a><a href="https://www.linkedin.com/in/vladimir-vizhunov-5964213b5/">LinkedIn</a></div>
+  <p class="foot-small">© 2026 vladimir vizhunov · Set in <a href="https://pavlokilko.github.io/KibernetykMono/">Kibernetyk Mono</a></p>
+</footer>
+<div class="lightbox" hidden><img alt=""><button type="button" aria-label="Close">×</button></div>
+<script src="../main.js" defer></script>
+</body>
+</html>
